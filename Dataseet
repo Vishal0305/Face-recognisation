@@ -24,7 +24,7 @@ while True:
     if face_extractor(frame) is not None:
         count += 1
         face = cv2.resize(face_extractor(frame), (224, 224))
-        file_name_path = 'C://Users//dell//Desktop//HW Projects//imageData//test//n0//' + str(count) + '.jpg'
+        file_name_path = "C://Users//admin//Desktop//mycode//Pictures" + str(count) + '.jpg'
         cv2.imwrite(file_name_path, face)
         cv2.putText(face, str(count), (50, 50), cv2.FONT_HERSHEY_COMPLEX, 1, (0,255,0), 2)
         cv2.imshow('Face Cropper', face)
